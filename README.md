@@ -24,7 +24,7 @@ To use pyospackage_rnliang in your code:
 
 ```python
 >>> import pyospackage_rnliang
->>> pyospackage_rnliang.hello_world()
+>>> pyospackage_rnliang.normal_pdf_value()
 ```
 
 ## Copyright
