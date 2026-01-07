@@ -7,7 +7,7 @@ is up to you. This test example provides a single test for the example.py
 module.
 """
 
-from pyospackage_rnliang.example import add_numbers
+from pyospackage_rnliang.example import normal_pdf_value
 
 def test_add_numbers():
     """
@@ -15,6 +15,6 @@ def test_add_numbers():
 
     A single line docstring for tests is generally sufficient.
     """
-    out = add_numbers(1, 2)
-    expected_out = 3
-    assert  out == expected_out, f"Expected {expected_out} but got {out}"
+    out = normal_pdf_value(0, 1, 1)
+    expected_out = 0.2419707245
+    assert abs(out - expected_out) < 1e-5, f"Expected {expected_out} but got {out}"
